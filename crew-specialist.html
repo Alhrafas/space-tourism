@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/crew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap" rel="stylesheet">  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+    <hr>
+    <div class="navbar_main">
+      <ul class="navbar" aria-expanded="false" id="primary-navigation" data-visible="false">
+        <li><a href="index.html">00 HOME</a></li>
+        <li><a href="destination-moon.html">01 DESTINATION</a></li>
+        <li><a href="crew-commander.html">02 CREW</a></li>
+        <li><a href="technology-vehicle.html">03 TECHNOLOGY</a></li>
+      </ul>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+  </header>
+
+  <main class="crew__hero">
+    <div class="crew-title">
+      <h2><span class="">02</span> MEET YOUR CREW</h2>
+    </div>
+    <div class="crew__main">
+      <div class="crew_hero_img">
+        <img src="./assets/crew/image-mark-shuttleworth.png" alt="mark">
+      </div>
+      <div class="dot-navigation">
+        <a href="crew-commander.html" class="dot"></a>
+        <a href="crew-specialist.html" class="dot"></a>
+        <a href="crew-pilot.html" class="dot"></a>
+        <a href="crew-engineer.html" class="dot"></a>
+        <!-- Add more dots as needed -->
+      </div>
+      <div class="crew_text">
+        <div class="crew_about">
+         <h1 class="title">MISSION SPECIALIST</h1>
+         <h1 class="name">MARK SHUTTLEWORTH</h1>
+         <P>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</P>
+        </div>
+        <!-- <H1>SPACE</H1>
+        <P>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</P> -->
+      </div>
+    </div>
+    <script src="./nav/nav.js" defer></script>
+  </main>
+</body>
+</html>

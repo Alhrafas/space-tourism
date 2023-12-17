@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/destiny.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <div class="navbar_main">
+      <ul class="navbar" aria-expanded="false" id="primary-navigation" data-visible="false">
+        <li><a href="index.html"><span>01</span> HOME</a></li>
+        <li><a href="destination-moon.html"><span>01</span> DESTINATION</a></li>
+        <li><a href="crew-commander.html"><span>02</span> CREW</a></li>
+        <li><a href="technology-vehicle.html"><span>03</span> TECHNOLOGY</a></li>
+      </ul>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>    
+  </header>
+
+  <main class="destiny__hero">
+    <div class="des_choose">
+      <h2><span class="">01</span> PICK YOUR DESTINATION</h2>
+    </div>
+    <div class="destiny__main">
+      <div class="destiny_hero_img">
+        <img src="./assets/destination/image-moon.png" alt="moon">
+      </div>
+      <div class="hero_text">
+        <div class="destiny_nav">
+          <ul class="moon-pages">
+            <a href="destination-moon.html"><li>MOON</li></a>
+            <a href="destination-mars.html"><li>MARS</li></a>
+            <a href="destination-europa.html"><li>EUROPA</li></a>
+            <a href="destination-titan.html"><li>TITAN</li></a>
+          </ul>
+        </div>
+        <div class="destiny_text">
+          <h1>MOON</h1>
+          <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          <hr>
+          <div class="destiny_time">
+            <div>
+              <p>AVG. DISTANCE</p>
+              <h2>384,400 KM</h2>
+            </div>
+            <div>
+              <p>EST. TRAVEL TIME</p>
+              <h2>3 DAYS</h2>
+            </div>
+          </div>
+        </div>
+        <!-- <H1>SPACE</H1>
+        <P>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</P> -->
+      </div>
+    </div>
+  </main>
+  <script src="./nav/nav.js" defer></script>
+</body>
+</html>

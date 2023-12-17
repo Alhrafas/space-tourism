@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* border: 1px solid red; */
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /* mix-blend-mode: screen; */
+    /* opacity: 0.2474; */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 0;
+    margin-bottom: 2em;
+    align-items: center;
+}
+.navbar li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.navbar li {
+    margin: 2em 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navbar {
+    list-style-type: none;
+    text-decoration: none;
+    position: fixed;
+    inset: 0 0 0 30%;
+    color: white;
+    padding: min(20vh, 10rem) 2em;
+    background-color: hsl(0 0% 0% / 0.5);
+    transition: all .30s ease-in-out;
+    transform: translateX(100%);
+    z-index: 999;
+}
+.navbar li:hover {
+    transform: translateY(-2%);
+}
+.mobile-nav-toggle {
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    border: 0;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+}
+.mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../assets/shared/icon-close.svg");
+}
+@supports (backdrop-filter: blur(1rem)) {
+    .navbar {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+    }
+}
+.menu {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.menu:hover {
+    /* background-color: darkgray; */
+    transform: translateY(2px);
+}
+.tech__hero{
+    margin-top: 2em;
+}
+.tech_hero_img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.tech_hero_img img {
+    width: 100%;
+}
+.tech_choose {
+    text-align: center;
+    align-items: center;
+}
+
+.tech__hero {
+    /* padding: 2em 2em; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.tech-title {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.tech-title h2 {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16875rem;
+    text-transform: uppercase;
+}
+.tech-title h2 span {
+    opacity: 0.35;
+    margin-right: 0.8rem;   
+}
+.tech__main {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+}   
+.tech_hero_img {
+    width: 100%;
+
+}
+.tech_hero_img img {
+    height: 200px;
+}
+.tech_hero_text {
+    padding: 2em;
+}
+.tech_navigation {
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.oval-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+.oval-navigation a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    stroke-width: 1px;
+    stroke: #FFF;
+    /* opacity: 0.25; */
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.oval-navigation a:hover {
+    background-color: white;
+    color: black;
+}
+.oval-navigation a:active {
+    background-color: #fff; /* Adjust the active background color */
+    color: #333; /* Adjust the active text color */
+}
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.4951;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.name {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1em;
+}
+.tech_text p {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+        mix-blend-mode: screen;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        padding: 0;
+        align-items: center;
+    }
+    .header__logo {
+        margin: 2em;
+    }
+    .mobile-nav-toggle {
+        display: none;
+    }
+    .navbar_main {
+        display: flex; /* Display as flex for tablet and larger screens */
+        align-items: center; /* Align items vertically in flex container */
+        margin: 0;
+        padding: 0;
+        color: white;
+        z-index: 0;
+    }    
+    .navbar {
+        inset: auto;
+        transform: translateX(0);
+        /* background-color: transparent; */
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+        position: static;
+        padding: 1em;
+        font-size: 1.2rem;
+        width: 450px;
+        height: 96px;
+        flex-shrink: 0;
+        align-items: center;
+    }
+    .navbar li {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
+        margin: 0 auto;
+        fill: #fff;
+        margin-inline-end: 1rem;  /* Adjust spacing between navigation items */
+    }
+    .navbar li a > span {
+        display: none;
+    }
+    .tech-title {
+        /* justify-content: flex-end; */
+        text-align: left;
+        margin-left: 2em;
+    }
+    .tech__main {
+        /* border: 1px solid #0f0; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .crew_hero_img {
+        align-items: flex-end;
+        /* background: url("../assets/crew/image-douglas-hurley.png"), 0px 0px / 100% 100% no-repeat; */
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        width: 456.372px;
+        height: 572px;
+        /* z-index: 999; */
+        margin-bottom: 0;
+    }
+    .tech_hero_img img {
+        height: 300px;
+        /* z-index: 999; */
+    }
+    .crew-pages {
+        width: 285.5px;
+        margin-left: 10%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        gap: 4em;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+    .crew-pages a li {
+        gap: 40px;
+    }
+    .tech_about {
+        padding: 2em ;
+        width: 458px;
+    }
+    .tile {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .tech_text p {
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .oval-navigation {
+        margin-bottom: 2em;
+    }
+    .dot {
+        background-color: rgb(139, 139, 139);
+        width: 20px;
+        height: 20px;
+    }
+    .tech_text {
+        width: 458px;
+        margin: 0 auto
+        ;
+    }
+}
+/* tablets design end here */
+
+
+/* desktops design start here */
+
+@media (min-width: 1280px) {
+    body {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+        border: 1px solid red;
+    }
+    .navbar {
+        width: 830px;
+        background: rgba(255, 255, 255, 0.04);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        letter-spacing: 2.7px;
+        backdrop-filter: blur(40.774227142333984px);
+    }
+    .navbar li {
+        display: flex;
+    }
+    .navbar li a > span {
+        display: inline;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4em;
+        text-align: initial;
+    }
+    .hero_text {
+        margin: 3em 0 0 ;
+    }
+    .hero_text h3 {
+        font-size: 25px;
+    }
+    .hero_text h1 {
+        font-size: 150px;
+    }
+    .hero_text p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: initial;
+    }
+    .hero_img {
+        width: 274px;
+        height: 274px;
+        font-size: 32px;
+    }
+    .tech__main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .tech_hero_img {
+        width: 50%;
+    }
+    .tech_hero_text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .oval-navigation {
+        margin-left: 5em;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+}

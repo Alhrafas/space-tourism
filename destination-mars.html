@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/destiny.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <a href="index.html"><img src="./assets/shared/logo.svg" alt="logo"></a>
+    </div>
+    <hr>
+    <div class="navbar_main">
+      <ul class="navbar" aria-expanded="false" id="primary-navigation" data-visible="false">
+        <li><a href="index.html">00 HOME</a></li>
+        <li><a href="destination-moon.html">01 DESTINATION</a></li>
+        <li><a href="crew-commander.html">02 CREW</a></li>
+        <li><a href="technology-vehicle.html">03 TECHNOLOGY</a></li>
+      </ul>
+    </div>
+  </header>
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+
+  <main class="destiny__hero">
+    <div class="des_choose">
+      <h2><span class="">01</span> PICK YOUR DESTINATION</h2>
+    </div>
+    <div class="destiny__main">
+      <div class="destiny_hero_img">
+        <img src="./assets/destination/image-mars.png" alt="mars">
+      </div>
+      <div class="hero_text">
+        <div class="destiny_nav">
+          <ul class="moon-pages">
+            <a href="destination-moon.html"><li>MOON</li></a>
+            <a href="destination-mars.html"><li>MARS</li></a>
+            <a href="destination-europa.html"><li>EUROPA</li></a>
+            <a href="destination-titan.html"><li>TITAN</li></a>
+          </ul>
+        </div>
+        <div class="destiny_text">
+          <h1>MARS</h1>
+          <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+          <hr>
+          <div class="destiny_time">
+            <div>
+              <p>AVG. DISTANCE</p>
+              <h2>225 MIL.KM</h2>
+            </div>
+            <div>
+              <p>EST. TRAVEL TIME</p>
+              <h2>9 MONTHS</h2>
+            </div>
+          </div>
+        </div>
+        <script src="./nav/nav.js" defer></script>
+   
+</body>
+</html>
