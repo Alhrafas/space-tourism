@@ -20,7 +20,7 @@ header {
     align-items: center;
 }
 .header__logo a img:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 .navbar_main ul {
     list-style-type: none;

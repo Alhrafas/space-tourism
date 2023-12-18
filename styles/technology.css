@@ -21,7 +21,7 @@ header {
     align-items: center;
 }
 .header__logo a img:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 .navbar li a {
     list-style-type: none;
@@ -410,6 +410,9 @@ header {
     }
     .tile {
         font-size: 16px;
+    }
+    .tech_text {
+        width: 500px;
     }
     .tech_text h1 {
         text-align: initial;
