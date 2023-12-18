@@ -40,6 +40,7 @@ header {
     background-color: hsl(0 0% 0% / 0.5);
     transition: all .30s ease-in-out;
     transform: translateX(100%);
+    z-index: 999;
 }
 .navbar li:hover {
     transform: translateY(-2px);
@@ -166,17 +167,15 @@ header {
 
 @media (min-width: 768px) {
     body {
-        /* height: 1055px; */
-        /* opacity: 0.25; */
         background-image: url("../assets/crew/background-crew-tablet.jpg");
-        mix-blend-mode: screen;
-        background-position: center;
+        /* mix-blend-mode: screen; */
+        /* background-position: center; */
+        background-position: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        /* mix-blend-mode: screen; */
-        /* background-color: black; */
         padding: 0;
         margin: 0;
+        z-index: 99;
     }
     header {
         padding: 0;
@@ -241,6 +240,7 @@ header {
         flex-direction: column-reverse;
     }
     .crew_hero_img {
+        z-index: 999;
         align-items: flex-end;
         /* background: url("../assets/crew/image-douglas-hurley.png"), 0px 0px / 100% 100% no-repeat; */
         background-position: center;
@@ -326,6 +326,8 @@ header {
 @media (min-width: 1280px) {
     body {
         background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-position: fixed;
+        z-index: 999;
     }
     .navbar {
         width: 830px;
