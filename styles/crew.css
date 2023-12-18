@@ -19,7 +19,9 @@ header {
     margin-bottom: 2em;
     align-items: center;
 }
-
+.header__logo a img:hover {
+    transform: translateY(-3px);
+}
 .navbar li {
     margin: 2em 0;
     list-style: none;
