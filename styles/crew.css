@@ -42,7 +42,7 @@ header {
     transform: translateX(100%);
 }
 .navbar li:hover {
-    transform: translateY(-2%);
+    transform: translateY(-2px);
 }
 .mobile-nav-toggle {
     position: absolute;
@@ -352,13 +352,12 @@ header {
     
     .crew-title {
         margin-left: 6em;
+        font-size: 28px;
     }
     .crew__main {
         flex-direction: row-reverse;
         align-items: center;
-        /* justify-content: space-between; */
         padding: 4em;
-        /* gap: 30px; */
         text-align: initial;
     }
     .dot__main {
@@ -386,7 +385,7 @@ header {
         text-align: initial;
     }
     .tile {
-        font-size: 16px;
+        font-size: 32px;
     }
     .crew_text h1 {
         text-align: initial;
