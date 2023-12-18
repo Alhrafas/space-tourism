@@ -43,7 +43,7 @@ header {
     z-index: 999;
 }
 .navbar li:hover {
-    transform: translateY(-2%);
+    transform: translateY(-2px);
 }
 .mobile-nav-toggle {
     position: absolute;
@@ -232,7 +232,6 @@ header {
     .navbar {
         inset: auto;
         transform: translateX(0);
-        /* background-color: transparent; */
         display: flex;
         margin: 0;
         padding: 0;
@@ -343,7 +342,7 @@ header {
 @media (min-width: 1280px) {
     body {
         background-image: url("../assets/technology/background-technology-desktop.jpg");
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     .navbar {
         width: 830px;
@@ -366,6 +365,9 @@ header {
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2.7px;
+    }
+    .tech-title {
+        margin-left: 9em;
     }
     .hero {
         display: flex;
@@ -399,6 +401,26 @@ header {
         display: flex;
         flex-direction: row-reverse;
     }
+    .tech_text {
+        margin-right: 10em;
+        text-align: initial;
+    }
+    .tile {
+        font-size: 16px;
+    }
+    .tech_text h1 {
+        text-align: initial;
+    }
+    .name {
+        text-align: initial;
+        margin-bottom: 0;
+        font-size: 56px;
+    }
+    .tech_text p {
+        text-align: initial;
+        margin-top: 2%;
+        font-size: 18px;
+    }
     .tech_hero_img {
         width: 50%;
     }
@@ -408,10 +430,11 @@ header {
         align-items: center;
     }
     .oval-navigation {
-        margin-left: 5em;
+        margin-left: 6em;
         display: flex;
         gap: 20px;
         flex-direction: column;
+        
     }
 
 }
